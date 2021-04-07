@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Introduction | ResNet Data Management Plan</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Introduction | ResNet Data Management Plan" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Introduction | ResNet Data Management Plan" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="John Clark" />
+
+
+<meta name="date" content="2021-04-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="index.html"/>
+<link rel="next" href="standards.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Management Plan</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Start</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#fair-guiding-principles"><i class="fa fa-check"></i><b>1.1</b> FAIR Guiding Principles</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#roles"><i class="fa fa-check"></i><b>1.2</b> Roles</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#workflows"><i class="fa fa-check"></i><b>1.3</b> Workflows</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="introduction.html"><a href="introduction.html#internal-data"><i class="fa fa-check"></i><b>1.3.1</b> Internal Data</a></li>
+<li class="chapter" data-level="1.3.2" data-path="introduction.html"><a href="introduction.html#external-data"><i class="fa fa-check"></i><b>1.3.2</b> External Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="standards.html"><a href="standards.html"><i class="fa fa-check"></i><b>2</b> Standards</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="standards.html"><a href="standards.html#identifiers"><i class="fa fa-check"></i><b>2.1</b> Identifiers</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="standards.html"><a href="standards.html#researchers-orcid"><i class="fa fa-check"></i><b>2.1.1</b> Researchers: ORCID</a></li>
+<li class="chapter" data-level="2.1.2" data-path="standards.html"><a href="standards.html#data-doi"><i class="fa fa-check"></i><b>2.1.2</b> Data: DOI</a></li>
+<li class="chapter" data-level="2.1.3" data-path="standards.html"><a href="standards.html#physical-samples-igsn"><i class="fa fa-check"></i><b>2.1.3</b> Physical Samples: IGSN</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="standards.html"><a href="standards.html#repositories"><i class="fa fa-check"></i><b>2.2</b> Repositories</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="standards.html"><a href="standards.html#portage"><i class="fa fa-check"></i><b>2.2.1</b> Portage</a></li>
+<li class="chapter" data-level="2.2.2" data-path="standards.html"><a href="standards.html#globus"><i class="fa fa-check"></i><b>2.2.2</b> GLOBUS</a></li>
+<li class="chapter" data-level="2.2.3" data-path="standards.html"><a href="standards.html#resnet-data-portalgeonode"><i class="fa fa-check"></i><b>2.2.3</b> ResNet Data Portal/GeoNode</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="standards.html"><a href="standards.html#metadata"><i class="fa fa-check"></i><b>2.3</b> Metadata</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="standards.html"><a href="standards.html#iso-19115"><i class="fa fa-check"></i><b>2.3.1</b> ISO 19115</a></li>
+<li class="chapter" data-level="2.3.2" data-path="standards.html"><a href="standards.html#tools"><i class="fa fa-check"></i><b>2.3.2</b> Tools</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="standards.html"><a href="standards.html#data-formats"><i class="fa fa-check"></i><b>2.4</b> Data Formats</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="standards.html"><a href="standards.html#raster"><i class="fa fa-check"></i><b>2.4.1</b> Raster</a></li>
+<li class="chapter" data-level="2.4.2" data-path="standards.html"><a href="standards.html#vector"><i class="fa fa-check"></i><b>2.4.2</b> Vector</a></li>
+<li class="chapter" data-level="2.4.3" data-path="standards.html"><a href="standards.html#tabular"><i class="fa fa-check"></i><b>2.4.3</b> Tabular</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>3</b> Resources</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://www.nsercresnet.ca" target="blank">NSERC ResNet</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ResNet Data Management Plan</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduction" class="section level1" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
+<div id="fair-guiding-principles" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> FAIR Guiding Principles</h2>
+<p>From the <a href="https://www.go-fair.org/fair-principles/">GO FAIR Initiative</a>:</p>
+<blockquote>
+<p><strong>Findable</strong><br />
+The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the <a href="https://www.go-fair.org/fair-principles/fairification-process/">FAIRification process</a>.</p>
+<p><a href="https://www.go-fair.org/fair-principles/fair-data-principles-explained/f1-meta-data-assigned-globally-unique-persistent-identifiers/"><strong>F1</strong>. (Meta)data are assigned a globally unique and persistent identifier</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/fair-data-principles-explained/f2-data-described-rich-metadata/"><strong>F2</strong>. Data are described with rich metadata (defined by R1 below)</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/f3-metadata-clearly-explicitly-include-identifier-data-describe/"><strong>F3</strong>. Metadata clearly and explicitly include the identifier of the data they describe</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/f4-metadata-registered-indexed-searchable-resource/"><strong>F4</strong>. (Meta)data are registered or indexed in a searchable resource</a></p>
+<p><strong>Accessible</strong><br />
+Once the user finds the required data, she/he needs to know how can they be accessed, possibly including authentication and authorisation.</p>
+<p><a href="https://www.go-fair.org/fair-principles/542-2/"><strong>A1</strong>. (Meta)data are retrievable by their identifier using a standardised communications protocol</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/a1-1-protocol-open-free-universally-implementable/"><strong>A1.1</strong> The protocol is open, free, and universally implementable</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/a1-2-protocol-allows-authentication-authorisation-required/"><strong>A1.2</strong> The protocol allows for an authentication and authorisation procedure, where necessary</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/a2-metadata-accessible-even-data-no-longer-available/"><strong>A2</strong>. Metadata are accessible, even when the data are no longer available</a></p>
+<p><strong>Interoperable</strong><br />
+The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.</p>
+<p><a href="https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/"><strong>I1</strong>. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/"><strong>I2</strong>. (Meta)data use vocabularies that follow FAIR principles</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/"><strong>I3</strong>. (Meta)data include qualified references to other (meta)data</a></p>
+<p><strong>Reusable</strong><br />
+The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.</p>
+<p><a href="https://www.go-fair.org/fair-principles/r1-metadata-richly-described-plurality-accurate-relevant-attributes/"><strong>R1</strong>. (Meta)data are richly described with a plurality of accurate and relevant attributes</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/r1-1-metadata-released-clear-accessible-data-usage-license/"><strong>R1.1</strong>. (Meta)data are released with a clear and accessible data usage license</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/r1-2-metadata-associated-detailed-provenance/"><strong>R1.2</strong>. (Meta)data are associated with detailed provenance</a></p>
+<p><a href="https://www.go-fair.org/fair-principles/r1-3-metadata-meet-domain-relevant-community-standards/"><strong>R1.3</strong>. (Meta)data meet domain-relevant community standards</a></p>
+<p>The principles refer to three types of entities: data (or any digital object), metadata (information about that digital object), and infrastructure. For instance, principle F4 defines that both metadata and data are registered or indexed in a searchable resource (the infrastructure component).</p>
+</blockquote>
+</div>
+<div id="roles" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Roles</h2>
+<blockquote>
+<p>or responsibilities. Who is required to do what? How are they held accountable, and by who?</p>
+</blockquote>
+</div>
+<div id="workflows" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Workflows</h2>
+<div id="internal-data" class="section level3" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Internal Data</h3>
+</div>
+<div id="external-data" class="section level3" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> External Data</h3>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="standards.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["ResNet-DMP.pdf", "ResNet-DMP.epub"],
+"toc": {
+"collapse": "subsection"
+},
+"info": false
+});
+});
+</script>
+
+</body>
+
+</html>

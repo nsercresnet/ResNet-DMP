@@ -1,0 +1,295 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={ResNet Data Management Plan},
+  pdfauthor={John Clark},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{ResNet Data Management Plan}
+\author{John Clark}
+\date{2021-04-07}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{start}{%
+\chapter*{Start}\label{start}}
+\addcontentsline{toc}{chapter}{Start}
+
+\includegraphics[width=0.75\textwidth,height=\textheight]{static/ResNet-logo.png}
+
+\begin{quote}
+suppress Start heading
+\end{quote}
+
+\begin{quote}
+versioning info
+\end{quote}
+
+\begin{quote}
+expand authorship
+\end{quote}
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+\hypertarget{fair-guiding-principles}{%
+\section{FAIR Guiding Principles}\label{fair-guiding-principles}}
+
+From the \href{https://www.go-fair.org/fair-principles/}{GO FAIR Initiative}:
+
+\begin{quote}
+\textbf{Findable}\\
+The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the \href{https://www.go-fair.org/fair-principles/fairification-process/}{FAIRification process}.
+
+\href{https://www.go-fair.org/fair-principles/fair-data-principles-explained/f1-meta-data-assigned-globally-unique-persistent-identifiers/}{\textbf{F1}. (Meta)data are assigned a globally unique and persistent identifier}
+
+\href{https://www.go-fair.org/fair-principles/fair-data-principles-explained/f2-data-described-rich-metadata/}{\textbf{F2}. Data are described with rich metadata (defined by R1 below)}
+
+\href{https://www.go-fair.org/fair-principles/f3-metadata-clearly-explicitly-include-identifier-data-describe/}{\textbf{F3}. Metadata clearly and explicitly include the identifier of the data they describe}
+
+\href{https://www.go-fair.org/fair-principles/f4-metadata-registered-indexed-searchable-resource/}{\textbf{F4}. (Meta)data are registered or indexed in a searchable resource}
+
+\textbf{Accessible}\\
+Once the user finds the required data, she/he needs to know how can they be accessed, possibly including authentication and authorisation.
+
+\href{https://www.go-fair.org/fair-principles/542-2/}{\textbf{A1}. (Meta)data are retrievable by their identifier using a standardised communications protocol}
+
+\href{https://www.go-fair.org/fair-principles/a1-1-protocol-open-free-universally-implementable/}{\textbf{A1.1}~The protocol is open, free, and universally implementable}
+
+\href{https://www.go-fair.org/fair-principles/a1-2-protocol-allows-authentication-authorisation-required/}{\textbf{A1.2}~The protocol allows for an authentication and authorisation procedure, where necessary}
+
+\href{https://www.go-fair.org/fair-principles/a2-metadata-accessible-even-data-no-longer-available/}{\textbf{A2}. Metadata are accessible, even when the data are no longer available}
+
+\textbf{Interoperable}\\
+The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.
+
+\href{https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/}{\textbf{I1}. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.}
+
+\href{https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/}{\textbf{I2}. (Meta)data use vocabularies that follow FAIR principles}
+
+\href{https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/}{\textbf{I3}. (Meta)data include qualified references to other (meta)data}
+
+\textbf{Reusable}\\
+The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.
+
+\href{https://www.go-fair.org/fair-principles/r1-metadata-richly-described-plurality-accurate-relevant-attributes/}{\textbf{R1}. (Meta)data are richly described with a plurality of accurate and relevant attributes}
+
+\href{https://www.go-fair.org/fair-principles/r1-1-metadata-released-clear-accessible-data-usage-license/}{\textbf{R1.1}. (Meta)data are released with a clear and accessible data usage license}
+
+\href{https://www.go-fair.org/fair-principles/r1-2-metadata-associated-detailed-provenance/}{\textbf{R1.2}. (Meta)data are associated with detailed provenance}
+
+\href{https://www.go-fair.org/fair-principles/r1-3-metadata-meet-domain-relevant-community-standards/}{\textbf{R1.3}. (Meta)data meet domain-relevant community standards}
+
+The principles refer to three types of entities: data (or any digital object), metadata (information about that digital object), and infrastructure. For instance, principle F4 defines that both metadata and data are registered or indexed in a searchable resource (the infrastructure component).
+\end{quote}
+
+\hypertarget{roles}{%
+\section{Roles}\label{roles}}
+
+\begin{quote}
+or responsibilities. Who is required to do what? How are they held accountable, and by who?
+\end{quote}
+
+\hypertarget{workflows}{%
+\section{Workflows}\label{workflows}}
+
+\hypertarget{internal-data}{%
+\subsection{Internal Data}\label{internal-data}}
+
+\hypertarget{external-data}{%
+\subsection{External Data}\label{external-data}}
+
+\hypertarget{standards}{%
+\chapter{Standards}\label{standards}}
+
+\hypertarget{identifiers}{%
+\section{Identifiers}\label{identifiers}}
+
+\hypertarget{researchers-orcid}{%
+\subsection{Researchers: ORCID}\label{researchers-orcid}}
+
+\hypertarget{data-doi}{%
+\subsection{Data: DOI}\label{data-doi}}
+
+\hypertarget{physical-samples-igsn}{%
+\subsection{Physical Samples: IGSN}\label{physical-samples-igsn}}
+
+\hypertarget{repositories}{%
+\section{Repositories}\label{repositories}}
+
+\hypertarget{portage}{%
+\subsection{Portage}\label{portage}}
+
+\hypertarget{globus}{%
+\subsection{GLOBUS}\label{globus}}
+
+\hypertarget{resnet-data-portalgeonode}{%
+\subsection{ResNet Data Portal/GeoNode}\label{resnet-data-portalgeonode}}
+
+\hypertarget{metadata}{%
+\section{Metadata}\label{metadata}}
+
+\begin{quote}
+retitle to documentation?
+\end{quote}
+
+\begin{quote}
+Define metadata and significance
+\end{quote}
+
+\hypertarget{iso-19115}{%
+\subsection{ISO 19115}\label{iso-19115}}
+
+\begin{quote}
+Links to standard (\url{http://rd-alliance.github.io/metadata-directory/standards/iso-19115.html})
+\end{quote}
+
+\begin{quote}
+Enumerate required fields
+\end{quote}
+
+\hypertarget{tools}{%
+\subsection{Tools}\label{tools}}
+
+\begin{quote}
+Metadata creation and validation tools
+\end{quote}
+
+ESRI/ArcGIS:
+
+Python:
+
+\url{https://pycsw.org/}
+
+\url{https://github.com/geopython/pygeometa}
+
+R:
+
+\url{https://github.com/eblondel/geometa}
+
+Stand Alone:
+
+Web:
+
+\hypertarget{data-formats}{%
+\section{Data Formats}\label{data-formats}}
+
+\hypertarget{raster}{%
+\subsection{Raster}\label{raster}}
+
+\hypertarget{formats}{%
+\subsubsection{Formats}\label{formats}}
+
+\hypertarget{geotiff}{%
+\paragraph{geotiff}\label{geotiff}}
+
+\hypertarget{netcdf}{%
+\paragraph{NetCDF}\label{netcdf}}
+
+\hypertarget{vector}{%
+\subsection{Vector}\label{vector}}
+
+\hypertarget{shapefile}{%
+\subsubsection{Shapefile}\label{shapefile}}
+
+\hypertarget{geojson}{%
+\subsubsection{GeoJSON}\label{geojson}}
+
+\hypertarget{tabular}{%
+\subsection{Tabular}\label{tabular}}
+
+\hypertarget{csv}{%
+\subsubsection{CSV}\label{csv}}
+
+\hypertarget{resources}{%
+\chapter{Resources}\label{resources}}
+
+\url{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510}
+
+\url{https://docs.computecanada.ca/wiki/Research_Data_Management}
+
+\url{https://earthdata.nasa.gov/esdis/eso/standards-and-references/data-product-development-guide-for-data-producers}
+
+\url{https://daac.ornl.gov/datamanagement/}
+
+\url{https://www.usgs.gov/products/data-and-tools/data-management/data-management-plans}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

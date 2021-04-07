@@ -1,0 +1,18 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Data Management Plan</a></li>
+      after: |
+        <li><a href="https://www.nsercresnet.ca" target="blank">NSERC ResNet</a></li>
+    download: ["pdf", "epub"]
+    sharing: no
+    info: no
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default
