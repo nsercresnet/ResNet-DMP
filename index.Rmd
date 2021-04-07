@@ -1,6 +1,6 @@
 ---
 title: "ResNet Data Management Plan"
-author: "John Clark"
+author: "ResNet Synthesis Team"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
