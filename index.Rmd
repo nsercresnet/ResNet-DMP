@@ -21,6 +21,12 @@ favicon: "static/favicon.ico"
 
 > expand authorship
 
+## Quick Links
+
+### Publishing Data
+
+### Getting Help
+
 # Introduction
 
 ## FAIR Guiding Principles
@@ -74,6 +80,9 @@ From the [GO FAIR Initiative](https://www.go-fair.org/fair-principles/):
 ## Roles
 
 > or responsibilities. Who is required to do what? How are they held accountable, and by who?
+> requirements for receiving resnet funding
+> prequisites for sharing data on resnet platform
+
 
 ## Workflows
 
