@@ -21,6 +21,12 @@ favicon: "static/favicon.ico"
 
 > expand authorship
 
+## Quick Links {.unnumbered}
+
+### Publishing Data {.unnumbered}
+
+### Getting Help {.unnumbered}
+
 # Introduction
 
 ## FAIR Guiding Principles
@@ -73,13 +79,22 @@ From the [GO FAIR Initiative](https://www.go-fair.org/fair-principles/):
 
 ## Roles
 
-> or responsibilities. Who is required to do what? How are they held accountable, and by who?
+> or responsibilities. Who is required to do what? How are they held accountable, and by who? requirements for receiving resnet funding prequisites for sharing data on resnet platform
 
 ## Workflows
 
 ### Internal Data
 
 ### External Data
+
+-   Verify license
+-   Retrieve and/or complete required metadata fields
+-   Storage
+    -   Small to moderate datasets (\< 2gb)
+        -   Upload to ResNet Data Portal
+    -   Large datasets (\> 2gb)
+        -   Explore existing services
+        -   Coordinate with ResNet data manager
 
 # Standards
 
@@ -102,7 +117,6 @@ From the [GO FAIR Initiative](https://www.go-fair.org/fair-principles/):
 ## Metadata
 
 > retitle to documentation?
-
 > Define metadata and significance
 
 ### ISO 19115
@@ -153,15 +167,12 @@ Web:
 
 # Resources
 
-https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510
+<https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510>
 
-https://docs.computecanada.ca/wiki/Research_Data_Management
+<https://docs.computecanada.ca/wiki/Research_Data_Management>
 
-https://earthdata.nasa.gov/esdis/eso/standards-and-references/data-product-development-guide-for-data-producers
+<https://earthdata.nasa.gov/esdis/eso/standards-and-references/data-product-development-guide-for-data-producers>
 
-https://daac.ornl.gov/datamanagement/
+<https://daac.ornl.gov/datamanagement/>
 
-https://www.usgs.gov/products/data-and-tools/data-management/data-management-plans
-
-
-
+<https://www.usgs.gov/products/data-and-tools/data-management/data-management-plans>
