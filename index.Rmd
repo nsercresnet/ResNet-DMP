@@ -23,7 +23,7 @@ favicon: "static/favicon.ico"
 
 ## Quick Links {.unnumbered}
 
-### Publishing Data {.unnumbered}
+### Publishing Data {.unnumbered .unlisted}
 
 ### Getting Help {.unnumbered}
 
